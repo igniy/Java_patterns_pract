@@ -1,0 +1,73 @@
+1078 [main] INFO  r.m.javapracs.Prac20Application
+                – Starting Prac20Application using Java 18.0.1.1 with PID 13616 (C:\Users\slash\OneDrive\Документы\Учеба\Джава\JavaPracs4sem_v3\prac20\FastSpringMVC\target\classes started by slash in C:\Users\slash\OneDrive\Документы\Учеба\Джава\JavaPracs4sem_v3\prac20\FastSpringMVC)
+1105 [main] INFO  r.m.javapracs.Prac20Application
+                – No active profile set, falling back to 1 default profile: "default"
+1975 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2057 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate
+                – Finished Spring Data repository scanning in 70 ms. Found 2 JPA repository interfaces.
+2427 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'profilingConfiguration' of type [ru.matrosov.javapracs.config.ProfilingConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2434 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'performanceMonitorInterceptor' of type [org.springframework.aop.interceptor.PerformanceMonitorInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2437 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker
+                – Bean 'performanceMonitorAdvisor' of type [org.springframework.aop.support.DefaultPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2905 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat initialized with port(s): 8080 (http)
+2921 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Initializing ProtocolHandler ["http-nio-8080"]
+2921 [main] INFO  o.a.catalina.core.StandardService
+                – Starting service [Tomcat]
+2922 [main] INFO  o.a.catalina.core.StandardEngine
+                – Starting Servlet engine: [Apache Tomcat/10.1.7]
+3042 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring embedded WebApplicationContext
+3042 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext
+                – Root WebApplicationContext: initialization completed in 1869 ms
+3206 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Starting...
+3408 [main] INFO  com.zaxxer.hikari.pool.HikariPool
+                – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@51c65a43
+3411 [main] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Start completed.
+3462 [main] INFO  o.h.jpa.internal.util.LogHelper
+                – HHH000204: Processing PersistenceUnitInfo [name: default]
+3534 [main] INFO  org.hibernate.Version
+                – HHH000412: Hibernate ORM core version 6.1.7.Final
+3922 [main] INFO  SQL dialect
+                – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+4875 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator
+                – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+4886 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Initialized JPA EntityManagerFactory for persistence unit 'default'
+5217 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+5369 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping
+                – Adding welcome page template: index
+5645 [main] INFO  o.a.coyote.http11.Http11NioProtocol
+                – Starting ProtocolHandler ["http-nio-8080"]
+5676 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer
+                – Tomcat started on port(s): 8080 (http) with context path ''
+5690 [main] INFO  r.m.javapracs.Prac20Application
+                – Started Prac20Application in 5.221 seconds (process running for 7.508)
+12067 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]
+                – Initializing Spring DispatcherServlet 'dispatcherServlet'
+12068 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Initializing Servlet 'dispatcherServlet'
+12071 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet
+                – Completed initialization in 2 ms
+12136 [http-nio-8080-exec-1] INFO  r.m.javapracs.service.TeamService
+                – Find all teams
+12365 [http-nio-8080-exec-1] INFO  r.m.javapracs.util.LoggingAspect
+                – StopWatch 'TeamService->findAll': running time = 228304300 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+228304300  100 %  findAll
+
+20423 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean
+                – Closing JPA EntityManagerFactory for persistence unit 'default'
+20425 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown initiated...
+20446 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource
+                – HikariPool-1 - Shutdown completed.
